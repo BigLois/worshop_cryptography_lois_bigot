@@ -3,14 +3,16 @@
 ## EPITECH PROJECT, 2021
 ## worshop_cryptography_lois_bigot
 ## File description:
-## exo1
+## exo2
 ##
 
 import sys
 import hashlib
 
+salt = "5UA@/Mw^%He]SBaU"
+
 def read_file():
-    f = open("phpbb.txt", "r")
+    f = open("info.txt", "r")
     arr = f.read().split('\n')
     return arr
 
@@ -25,7 +27,7 @@ def hashing(arr):
 def cmpstring(mdp):
     i = 0
     for i in range(len(mdp)):
-        if mdp[i] == "3ddcd95d2bff8e97d3ad817f718ae207b98c7f2c84c5519f89cd15d7f8ee1c3b":
+        if mdp[i] == "fc2298f491eac4cff95e7568806e088a901c904cda7dd3221f551e5b89b3c3aa":
             return i
 
 def display(i, arr):
